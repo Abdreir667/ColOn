@@ -92,7 +92,7 @@ void UnitPerf::invokeWSDTest()
     TST_LOG("startup: " << _timer->elapsedTime().count() << "us\n");
     _timer->restart();
     std::string opt;
-    opt  = "write";
+    opt  = "writer";
     testPerf( opt, "odt", "/../traces/perf-writer.txt");
     opt = "calc";
     testPerf( opt, "ods", "/../traces/perf-calc.txt");
